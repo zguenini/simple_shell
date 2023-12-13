@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
- * Function to get the history file.
+ * get_history_file - Function to get the history file.
  *
- * @param info Parameter struct
- * @return Allocated string containing the history file
+ * @info: Parameter struct
+ * Return: Allocated string containing the history file
  */
 
 char *get_history_file(info_t *info)
@@ -25,10 +25,10 @@ char *get_history_file(info_t *info)
 }
 
 /**
- * Function to create a file or append to an existing file.
+ * write_history - Function to create a file or append to an existing file.
  *
- * @param info The parameter struct
- * @return 1 on success, else -1
+ * @info: The parameter struct
+ * Return: 1 on success, else -1
  */
 int write_history(info_t *info)
 {
@@ -54,10 +54,10 @@ int write_history(info_t *info)
 }
 
 /**
- * Function to read history from a file.
+ * read_history - Function to read history from a file.
  *
- * @param info The parameter struct
- * @return histcount on success, 0 otherwise
+ * @info: The parameter struct
+ * Return: histcount on success, 0 otherwise
  */
 int read_history(info_t *info)
 {
@@ -103,12 +103,12 @@ int read_history(info_t *info)
 }
 
 /**
- * Function to add an entry to a history linked list.
+ * build_history_list - Function to add an entry to a history linked list.
  *
- * @param info Structure containing potential arguments.
- * @param buf Buffer
- * @param linecount The history linecount, histcount
- * @return Always 0
+ * @info: Structure containing potential arguments.
+ * @buf: Buffer
+ * @linecount: The history linecount, histcount
+ * Return: Always 0
  */
 int build_history_list(info_t *info, char *buf, int linecount)
 {
@@ -124,10 +124,11 @@ int build_history_list(info_t *info, char *buf, int linecount)
 }
 
 /**
- * Function to renumber the history linked list after changes.
+ * renumber_history - Function to renumber the history linked
+ * list after changes.
  *
- * @param info Structure containing potential arguments.
- * @return The new histcount
+ * @info: Structure containing potential arguments.
+ * Return: The new histcount
  */
 int renumber_history(info_t *info)
 {

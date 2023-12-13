@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
- * Function to print the current environment.
+ * _myenv - Function to print the current environment.
  *
- * @param info Structure containing potential arguments.
- * @return Always 0
+ * @info: Structure containing potential arguments.
+ * Return: Always 0
  */
 int _myenv(info_t *info)
 {
@@ -13,11 +13,11 @@ int _myenv(info_t *info)
 }
 
 /**
- * Function to get the value of an environment variable.
+ * _getenv - Function to get the value of an environment variable.
  *
- * @param info Structure containing potential arguments.
- * @param name Env variable name
- * @return The value
+ * @info: Structure containing potential arguments.
+ * @name: Env variable name
+ * Return: The value
  */
 char *_getenv(info_t *info, const char *name)
 {
@@ -35,10 +35,10 @@ char *_getenv(info_t *info, const char *name)
 }
 
 /**
- * Function to initialize a new environment variable or modify an existing one.
+ * _mysetenv - initialize a new environment variable or modify an existing one.
  *
- * @param info Structure containing potential arguments.
- * @return Always 0
+ * @info: Structure containing potential arguments.
+ * Return: Always 0
  */
 int _mysetenv(info_t *info)
 {
@@ -53,10 +53,10 @@ int _mysetenv(info_t *info)
 }
 
 /**
- * Function to remove an environment variable.
+ * _myunsetenv - Function to remove an environment variable.
  *
- * @param info Structure containing potential arguments.
- * @return Always 0
+ * @info: Structure containing potential arguments.
+ * Return: Always 0
  */
 int _myunsetenv(info_t *info)
 {
@@ -74,10 +74,10 @@ int _myunsetenv(info_t *info)
 }
 
 /**
- * Function to populate the environment linked list.
+ * populate_env_list - Function to populate the environment linked list.
  *
- * @param info Structure containing potential arguments.
- * @return Always 0
+ * @info: Structure containing potential arguments.
+ * Return: Always 0
  */
 int populate_env_list(info_t *info)
 {

@@ -1,12 +1,12 @@
 #include "shell.h"
 
 /**
- * Function to add a node to the start of the list.
+ * add_node - Function to add a node to the start of the list.
  *
- * @param head Address of pointer to head node
- * @param str Str field of node
- * @param num Node index used by history
- * @return Size of the list
+ * @head: Address of pointer to head node
+ * @str: Str field of node
+ * @num: Node index used by history
+ * Return: Size of the list
  */
 list_t *add_node(list_t **head, const char *str, int num)
 {
@@ -34,12 +34,12 @@ list_t *add_node(list_t **head, const char *str, int num)
 }
 
 /**
- * Function to add a node to the end of the list.
+ * add_node_end - Function to add a node to the end of the list.
  *
- * @param head Address of pointer to head node
- * @param str Str field of node
- * @param num Node index used by history
- * @return Size of the list
+ * @head: Address of pointer to head node
+ * @str: Str field of node
+ * @num: Node index used by history
+ * Return: Size of the list
  */
 list_t *add_node_end(list_t **head, const char *str, int num)
 {
@@ -75,10 +75,11 @@ list_t *add_node_end(list_t **head, const char *str, int num)
 }
 
 /**
- * Function to print only the str element of a list_t linked list.
+ * print_list_str - Function to print only the str element
+ * of a list_t linked list.
  *
- * @param h Pointer to the first node
- * @return Size of the list
+ * @h: Pointer to the first node
+ * Return: Size of the list
  */
 size_t print_list_str(const list_t *h)
 {
@@ -95,11 +96,11 @@ size_t print_list_str(const list_t *h)
 }
 
 /**
- * Function to delete a node at a given index.
+ * delete_node_at_index - Function to delete a node at a given index.
  *
- * @param head Address of pointer to the first node
- * @param index Index of the node to delete
- * @return 1 on success, 0 on failure
+ * @head: Address of pointer to the first node
+ * @index: Index of the node to delete
+ * Return: 1 on success, 0 on failure
  */
 int delete_node_at_index(list_t **head, unsigned int index)
 {
@@ -135,10 +136,10 @@ int delete_node_at_index(list_t **head, unsigned int index)
 }
 
 /**
- * Function to free all nodes of a list.
+ * free_list - Function to free all nodes of a list.
  *
- * @param head_ptr Address of pointer to head node
- * @return Void
+ * @head_ptr: Address of pointer to head node
+ * Return: Void
  */
 void free_list(list_t **head_ptr)
 {

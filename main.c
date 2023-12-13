@@ -1,11 +1,11 @@
 #include "shell.h"
 
 /**
- * Entry point for the main function.
+ * main - Entry point for the main function.
  *
- * @param ac Argument count
- * @param av Argument vector
- * @return 0 on success, 1 on error
+ * @ac: Argument count
+ * @av: Argument vector
+ * Return: 0 on success, 1 on error
  */
 int main(int ac, char **av)
 {

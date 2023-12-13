@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
- * Function to convert a string to an integer.
+ * _erratoi - Function to convert a string to an integer.
  *
- * @param s The string to be converted
- * @return 0 if no numbers in string, converted number otherwise
+ * @s: The string to be converted
+ * Return: 0 if no numbers in string, converted number otherwise
  *         -1 on error
  */
 int _erratoi(char *s)
@@ -13,7 +13,7 @@ int _erratoi(char *s)
 	unsigned long int result = 0;
 
 	if (*s == '+')
-		s++;  
+		s++;
 	for (i = 0;  s[i] != '\0'; i++)
 	{
 		if (s[i] >= '0' && s[i] <= '9')
@@ -30,11 +30,11 @@ int _erratoi(char *s)
 }
 
 /**
- * Function to print an error message.
+ * print_error - Function to print an error message.
  *
- * @param info The parameter & return info struct
- * @param estr String containing specified error type
- * @return 0 if no numbers in string, converted number otherwise
+ * @info: The parameter & return info struct
+ * @estr: String containing specified error type
+ * Return: 0 if no numbers in string, converted number otherwise
  *         -1 on error
  */
 void print_error(info_t *info, char *estr)
@@ -49,11 +49,11 @@ void print_error(info_t *info, char *estr)
 }
 
 /**
- * Function to print a decimal (integer) number (base 10).
+ * print_d - Function to print a decimal (integer) number (base 10).
  *
- * @param input The input
- * @param fd The file descriptor to write to
- * @return The number of characters printed
+ * @input: The input
+ * @fd: The file descriptor to write to
+ * Return: The number of characters printed
  */
 int print_d(int input, int fd)
 {
@@ -88,12 +88,12 @@ int print_d(int input, int fd)
 }
 
 /**
- * Function to convert a number (clone of itoa).
+ * convert_number - Function to convert a number (clone of itoa).
  *
- * @param num Number
- * @param base Base
- * @param flags Argument flags
- * @return String
+ * @num: Number
+ * @base: Base
+ * @flags: Argument flags
+ * Return: String
  */
 char *convert_number(long int num, int base, int flags)
 {
@@ -124,10 +124,10 @@ char *convert_number(long int num, int base, int flags)
 }
 
 /**
- * Function to replace the first instance of '#' with '\0'.
+ * remove_comments - Function to replace the first instance of '#' with '\0'.
  *
- * @param buf Address of the string to modify
- * @return Always 0
+ * @buf: Address of the string to modify
+ * Return: Always 0
  */
 void remove_comments(char *buf)
 {
