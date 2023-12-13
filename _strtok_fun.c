@@ -1,10 +1,11 @@
 #include "shell.h"
 
 /**
- * check_delim - Checks if a character is a delimiter
- * @c: Character to check
- * @str: String of delimiters
- * Return: 1 for success, 0 for failure
+ * Function to check if a character is a delimiter.
+ *
+ * @param c Character to check
+ * @param str String of delimiters
+ * @return 1 for success, 0 for failure
  */
 unsigned int check_delim(char c, const char *str)
 {
@@ -19,10 +20,11 @@ unsigned int check_delim(char c, const char *str)
 }
 
 /**
- * _strtok - Tokenizes a string
- * @str: String to tokenize
- * @delim: Delimiter string
- * Return: Pointer to the next token or NULL
+ * Function to tokenize a string.
+ *
+ * @param str String to tokenize
+ * @param delim Delimiter string
+ * @return Pointer to the next token or NULL
  */
 char *_strtok(char *str, const char *delim)
 {
