@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
- * _eputs - prints an input string
- * @str: the string to be printed
+ * Function to print an input string.
  *
- * Return: Nothing
+ * @param str The string to be printed
+ * @return Nothing
  */
 void _eputs(char *str)
 {
@@ -20,11 +20,11 @@ void _eputs(char *str)
 }
 
 /**
- * _eputchar - writes the character c to stderr
- * @c: The character to print
+ * Function to write the character c to stderr.
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * @param c The character to print
+ * @return On success 1.
+ *         On error, -1 is returned, and errno is set appropriately.
  */
 int _eputchar(char c)
 {
@@ -42,12 +42,12 @@ int _eputchar(char c)
 }
 
 /**
- * _putfd - writes the character c to given fd
- * @c: The character to print
- * @fd: The filedescriptor to write to
+ * Function to write the character c to a given file descriptor.
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * @param c The character to print
+ * @param fd The file descriptor to write to
+ * @return On success 1.
+ *         On error, -1 is returned, and errno is set appropriately.
  */
 int _putfd(char c, int fd)
 {
@@ -65,11 +65,11 @@ int _putfd(char c, int fd)
 }
 
 /**
- * _putsfd - prints an input string
- * @str: the string to be printed
- * @fd: the filedescriptor to write to
+ * Function to print an input string to a given file descriptor.
  *
- * Return: the number of chars put
+ * @param str The string to be printed
+ * @param fd The file descriptor to write to
+ * @return The number of characters put
  */
 int _putsfd(char *str, int fd)
 {

@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
- * list_len - determines length of linked list
- * @h: pointer to first node
+ * Function to determine the length of a linked list.
  *
- * Return: size of list
+ * @param h Pointer to the first node
+ * @return Size of the list
  */
 size_t list_len(const list_t *h)
 {
@@ -19,10 +19,10 @@ size_t list_len(const list_t *h)
 }
 
 /**
- * list_to_strings - returns an array of strings of the list->str
- * @head: pointer to first node
+ * Function to return an array of strings of the list->str.
  *
- * Return: array of strings
+ * @param head Pointer to the first node
+ * @return Array of strings
  */
 char **list_to_strings(list_t *head)
 {
@@ -56,10 +56,10 @@ char **list_to_strings(list_t *head)
 
 
 /**
- * print_list - prints all elements of a list_t linked list
- * @h: pointer to first node
+ * Function to print all elements of a list_t linked list.
  *
- * Return: size of list
+ * @param h Pointer to the first node
+ * @return Size of the list
  */
 size_t print_list(const list_t *h)
 {
@@ -79,12 +79,12 @@ size_t print_list(const list_t *h)
 }
 
 /**
- * node_starts_with - returns node whose string starts with prefix
- * @node: pointer to list head
- * @prefix: string to match
- * @c: the next character after prefix to match
+ * Function to return the node whose string starts with a prefix.
  *
- * Return: match node or null
+ * @param node Pointer to the list head
+ * @param prefix String to match
+ * @param c The next character after the prefix to match
+ * @return Matched node or NULL
  */
 list_t *node_starts_with(list_t *node, char *prefix, char c)
 {
@@ -101,11 +101,11 @@ list_t *node_starts_with(list_t *node, char *prefix, char c)
 }
 
 /**
- * get_node_index - gets the index of a node
- * @head: pointer to list head
- * @node: pointer to the node
+ * Function to get the index of a node.
  *
- * Return: index of node or -1
+ * @param head Pointer to the list head
+ * @param node Pointer to the node
+ * @return Index of the node or -1
  */
 ssize_t get_node_index(list_t *head, list_t *node)
 {
